@@ -15,15 +15,21 @@ This project focuses on clarity and structure rather than performance or advance
 - text input (direct or file)
 - output to stdout or file
 
-## Usage (planned)
+## Usage (MVP)
 
-Examples of how the CLI is expected to be used:
+The MVP supports a single transformation at a time.
 
+### Trim
 dt trim "   hello   "
+# output: hello
 
-dt to_csv --in data.txt
+## Error cases (MVP)
 
-dt trim --in raw.txt --out clean.txt
+- Missing arguments:
+  - dt
+  - dt trim
+- Unknown transformation:
+  - dt foo "hello"
 
 
 Details will be refined incrementally.
