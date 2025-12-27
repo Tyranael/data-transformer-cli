@@ -1,3 +1,4 @@
+from .transforms import trim
 import sys
 
 valid_actions = {"trim"}
@@ -9,7 +10,8 @@ if len(sys.argv) < 3:
     sys.exit(2)
 
 if sys.argv[1] in valid_actions:
-    print(f"Action received: {sys.argv[1]}\nText received: {sys.argv[2]}")
+    trimmed = trim(sys.argv[2])
+    print(trimmed)
 else:
     print(f"Unknown action: {sys.argv[1]}")
     sys.exit(2)

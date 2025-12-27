@@ -51,7 +51,7 @@ Notes:
 **Deliverable**
 - Add a pure function that performs trim on a string.
 **Acceptance**
-- Given `"   hello   "`, output is `"hello"` (no extra whitespace).
+- Given `"   hello   "`, output is `"hello"` (no extra whitespace).ls -
 
 ### MVP-05 — Wire CLI to transformation logic
 **Deliverable**
