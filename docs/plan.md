@@ -65,6 +65,15 @@ Notes:
 **Acceptance**
 - Manual cases cover: normal trim, empty string, only spaces, missing args, unknown transform.
 
+## Manual test checklist (MVP)
+
+- [ ] `python3 src/dtcli/cli.py trim "   hello   "` -> outputs `hello`
+- [ ] `python3 src/dtcli/cli.py trim ""` -> outputs empty line
+- [ ] `python3 src/dtcli/cli.py trim "     "` -> outputs empty line
+- [ ] `python3 src/dtcli/cli.py` -> prints usage and exits with code 2
+- [ ] `python3 src/dtcli/cli.py trimp "hello"` -> prints unknown action and exits with code 2
+
+
 ### MVP-07 — Cleanup + docs sync
 **Deliverable**
 - Ensure README reflects what is actually implemented (not “planned” anymore for trim).
