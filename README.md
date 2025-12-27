@@ -20,16 +20,17 @@ This project focuses on clarity and structure rather than performance or advance
 The MVP supports a single transformation at a time.
 
 ### Trim
-dt trim "   hello   "
+python3 src/dtcli/cli.py trim "   hello   "
 # output: hello
 
 ## Error cases (MVP)
 
 - Missing arguments:
-  - dt
-  - dt trim
+  python3 src/dtcli/cli.py
+  python3 src/dtcli/cli.py trim
+
 - Unknown transformation:
-  - dt foo "hello"
+  python3 src/dtcli/cli.py foo "hello"
 
 
 Details will be refined incrementally.
